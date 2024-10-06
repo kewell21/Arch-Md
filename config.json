@@ -1,4 +1,4 @@
 {
-   "auto_welcomeMsg": false,
-   "auto_leaveMsg": false
+   "auto_welcomeMsg": true, 
+   "auto_leaveMsg": true
 }
