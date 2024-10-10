@@ -7,24 +7,26 @@ global.owner = "2347036214381" //change
 global.botname = "𝑨𝒓𝒄𝒉 𝑴𝒅 𝑨𝒊"  //change
 global.ownername = "ᴇᴅɴᴜᴛ" //change
 global.simbol = "♘"
-global.footer = "`𝑮𝒉𝒂𝒔𝒕 𝑪𝒍𝒂𝒏 𝑮𝒓𝒆𝒚`" //Don't touch others
+global.footer = "`𝑮𝒉𝒂𝒔𝒕 𝑪𝒍𝒂𝒏 𝑮𝒓𝒆𝒚`" //Don't touch
 
 global.ytchannel = "youtube.com/@Ednuthimself"
 
 global.idchannel = "120363297279563825@newsletter"
-global.linkgc = 'https://whatsapp.com/channel/0029VamspnPB4hdUnvLaIX17'
+global.linkgc = 'https://chat.whatsapp.com/HO2JGN8YHr9IOf4XOSRhGe'
 
-global.packname = "Arch Development"
+global.packname = "𝑨𝑹𝑪𝑯 𝑴𝑫"
 global.author = "WhatsApp Bot"
 
 global.anticall = false
+global.welcome = false // check config.json
+global.mode = false // false for private, true for public 
 
 // if you have a image url input//
 
 global.image = "https://tinyurl.com/5f7ajm2e"
 global.image2 = 'https://tinyurl.com/5f7ajm2e'
 
-// message settings don't edit ‼️//
+// message settings don't edit might cause malfunction ‼️//
 
 global.msg = {
 "arch": "𝑾𝒉𝒂𝒕 𝒈𝒐𝒐𝒅 ?️",
@@ -35,8 +37,8 @@ global.msg = {
 "private": "Feature can only be used in Private Chat❗", 
 "admin": "what ? are you an administrator !!", 
 "adminbot": "Bot must be admin first❗", 
-"owner": "Owner only❗", 
-"developer": "command for developer Developer❗"
+"owner": "this a owner cmd only❗", 
+"developer": "command for developer❗"
 }
 
 
