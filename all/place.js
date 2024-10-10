@@ -2,6 +2,7 @@ require("./global")
 
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const delay = ms => (ms) && new Promise(resolve => setTimeout(resolve, ms))
+const makeid = crypto.randomBytes(3).toString('hex')
 const getBuffer = async (url, options) => {
 try {
 options ? options : {}
@@ -56,6 +57,24 @@ Skyzo.inspectLink = async (code) => {
         return extractGroupInviteMetadata(results);
 }
 
+Skyzo.sendTextWithMentions = async (jid, text, quoted, options = {}) => Skyzo.sendMessage(jid, { text: text, mentions: [...text.matchAll(/@(\d{0,16})/g)].map(v => v[1] + '@s.whatsapp.net'), ...options }, { quoted })
+
+ Skyzo.downloadAndSaveMediaMessage = async (message, filename, attachExtension = true) => {
+let quoted = message.msg ? message.msg : message
+let mime = (message.msg || message).mimetype || ''
+let messageType = message.mtype ? message.mtype.replace(/Message/gi, '') : mime.split('/')[0]
+const stream = await downloadContentFromMessage(quoted, messageType)
+let buffer = Buffer.from([])
+for await(const chunk of stream) {
+buffer = Buffer.concat([buffer, chunk])
+}
+let type = await FileType.fromBuffer(buffer)
+trueFileName = attachExtension ? (filename + '.' + type.ext) : filename
+await fs.writeFileSync(trueFileName, buffer)
+return trueFileName
+ }
+ 
+    
 function updateNameToDb(contacts) {
         if (!contacts) return
         for (let contact of contacts) {
