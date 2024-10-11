@@ -7,6 +7,7 @@ const yargs = require('yargs/yargs')
 const _ = require('lodash')
 const text2png = require ('wa-sticker-formatter')
 const reseller = JSON.parse(fs.readFileSync("./all/database/setsudo.json"))
+const makeid = crypto.randomBytes(3).toString('hex')
 const usePairingCode = true
 const question = (text) => {
 const rl = readline.createInterface({
