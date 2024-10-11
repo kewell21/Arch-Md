@@ -2,7 +2,6 @@ require("./global")
 
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 const delay = ms => (ms) && new Promise(resolve => setTimeout(resolve, ms))
-const makeid = crypto.randomBytes(3).toString('hex')
 
 const getBuffer = async (url, options) => {
 try {
