@@ -3,9 +3,9 @@
 
 require("./all/module.js")
 
-global.owner = "2347036214381" //change
-global.botname = "𝑨𝒓𝒄𝒉 𝑴𝒅 𝑨𝒊"  //change
-global.ownername = "ᴇᴅɴᴜᴛ" //change
+global.owner = "2250546526324" //change
+global.botname = "𝑨𝒓𝒄𝒉 KHALIL👑"  //change
+global.ownername = "KHALIL BZ MOI 👄" //change
 global.simbol = "♘"
 global.footer = "`𝑮𝒉𝒂𝒔𝒕 𝑪𝒍𝒂𝒏 𝑮𝒓𝒆𝒚`" //Don't touch
 
@@ -14,7 +14,7 @@ global.ytchannel = "youtube.com/@Ednuthimself"
 global.idchannel = "120363297279563825@newsletter"
 global.linkgc = 'https://chat.whatsapp.com/HO2JGN8YHr9IOf4XOSRhGe'
 
-global.packname = "𝑨𝑹𝑪𝑯 𝑴𝑫"
+global.packname = "𝐊𝚮𝚫𝐋𝚰𝐋🍆 𝐒𝚸𝚵𝚵𝐃🔥 𝑬𝑽𝑰𝑳😈"
 global.author = "WhatsApp Bot"
 
 global.anticall = false
